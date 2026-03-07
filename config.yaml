@@ -1,0 +1,33 @@
+project:
+  name: species-id
+  seed: 42
+
+data:
+  train_dir: data/sample/train
+  val_dir: data/sample/val
+  num_classes: 2
+  class_names: ["cat", "dog"]
+
+train:
+  image_size: 224
+  batch_size: 16
+  num_workers: 2
+  epochs: 2
+  lr: 0.0003
+  weight_decay: 0.0001
+  mixed_precision: true
+  device: auto   # auto | cpu | cuda
+
+model:
+  backbone: "efficientnet_b0"  # timm model name
+  pretrained: true
+  dropout: 0.2
+
+aug:
+  enabled: true
+
+logging:
+  out_dir: outputs/runs
+  save_dir: outputs/models
+  run_name: "phase0_sanity"
+  save_best: true
