@@ -9,13 +9,28 @@ from PIL import Image
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-def load_category_model(model_dir):
+def _find_best_weight(model_dir: Path) -> Path:
+    best_files = list(model_dir.glob("*_best.pt"))
+    if not best_files:
+        raise FileNotFoundError(f"No *_best.pt file found in {model_dir}")
+    return best_files[0]
+
+
+def _find_config_file(model_dir: Path) -> Path:
+    candidates = list(model_dir.glob("config*.json"))
+    if not candidates:
+        raise FileNotFoundError(f"No config*.json file found in {model_dir}")
+    return candidates[0]
+
+
+def load_submodel(model_dir: str):
     model_dir = Path(model_dir)
 
     with open(model_dir / "class_to_idx.json", "r", encoding="utf-8") as f:
         class_to_idx = json.load(f)
 
-    with open(model_dir / "config_model1.json", "r", encoding="utf-8") as f:
+    config_path = _find_config_file(model_dir)
+    with open(config_path, "r", encoding="utf-8") as f:
         cfg = json.load(f)
 
     idx_to_class = {int(v): k for k, v in class_to_idx.items()}
@@ -29,7 +44,8 @@ def load_category_model(model_dir):
         num_classes=num_classes
     )
 
-    state = torch.load(model_dir / "category_model_best.pt", map_location=DEVICE)
+    weight_path = _find_best_weight(model_dir)
+    state = torch.load(weight_path, map_location=DEVICE)
     model.load_state_dict(state)
     model.to(DEVICE)
     model.eval()
@@ -49,7 +65,7 @@ def build_transform(image_size: int):
 
 
 @torch.no_grad()
-def predict_category_topk(model, idx_to_class, img: Image.Image, image_size: int, k: int = 3):
+def predict_subclass_topk(model, idx_to_class, img: Image.Image, image_size: int, k: int = 3):
     transform = build_transform(image_size)
     x = transform(img.convert("RGB")).unsqueeze(0).to(DEVICE)
 

@@ -18,14 +18,12 @@ def explain_animal_ollama(animal: str, model: str = DEFAULT_MODEL) -> Dict[str, 
     prompt = (
         SYSTEM_RULES
         + "\n"
-        + f"Animal: {animal}\n"
-        + "Context: This animal was predicted from a photo by an animal classifier.\n\n"
+        + f"class: {animal}\n"
+        + "Context: This class was predicted from a photo by an  classifier.\n\n"
         + "Return JSON with keys:\n"
         + "title: string\n"
         + "short: string (1-2 sentences)\n"
         + "facts: array of 5 short bullet strings\n"
-        + "habitat: string\n"
-        + "food: string\n"
         + "quiz: string (one question for kids)\n"
         + "safety_note: string (1 short sentence about being kind/safe around animals)\n"
     )
