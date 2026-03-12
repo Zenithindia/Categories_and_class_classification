@@ -13,8 +13,8 @@ st.caption("Upload an image or take a photo. The app predicts the category first
 CATEGORY_MODEL_DIR = "outputs/models/category_model"
 
 CATEGORY_TO_FOLDER = {
-    "Animal": "animal_model",
-    "animal": "animal_model",
+    "Animals": "animals_model",
+    "animal": "animals_model",
     "flags": "flags_model",
     "flower": "flower_model",
     "food": "food_model",
@@ -24,8 +24,9 @@ CATEGORY_TO_FOLDER = {
     "shapes": "shapes_model",
     "sports_equipments": "sports_equipments_model",
     "sports equipments": "sports_equipments_model",
-    "vehicle": "vehicle_model",
+    "vehicle": "Vechile_model",
     "weather": "weather_model",
+    "Vechile" :"Vechile_model"
 }
 
 CATEGORY_DISPLAY = {
@@ -42,6 +43,7 @@ CATEGORY_DISPLAY = {
     "sports equipments": "Sports Equipments",
     "vehicle": "Vehicle",
     "weather": "Weather",
+    "Vechile" : "vehicle"
 }
 
 
