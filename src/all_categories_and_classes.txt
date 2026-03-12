@@ -1,0 +1,51 @@
+All Categories and Classes:
+
+CATEGORIES :
+
+Animal, Flags, Flower, Food, Fruits_and_Vegetables, Monument, Sports_Equipments, 
+Vehicle, Weather
+
+
+CLASSES : 
+
+Food: Apple Pie, Cannoli, Chicken Curry, Chocolate Cake, Cup Cakes, Donuts, Dumplings, 
+French Fries, Fried Rice, Hamburger, Hot and Sour Soup, Hot Dog, Ice Cream, Nachos, Omelette,
+ Pizza, Ramen, Samosa, Spring Rolls, Waffles
+Vehicle: Auto Rickshaws, Bicycles, Bus, Helicopters, Motorcycles, Planes, Ships, Trains,
+ Truck
+
+
+Flags: Afghanistan, Albania, Algeria, Andorra, Angola, Antigua and Barbuda, Argentina,
+ Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus,
+  Belgium, ..., CAR, Cabo Verde, … +165 more
+
+Flowers: Aster, Daisy, Iris, Lavender, Lily, Marigold, Orchid, Poppy, Rose, Sunflower,
+ Dandelion, Tulip
+Animals: Antelope, Bear, Beaver, Bee, Bison, Blackbird, Buffalo, Butterfly, Camel, Cat,
+ Cheetah, Chimpanzee, Chinchilla, Cow, Crab, Crocodile, Deer, Dog, Dolphin, Donkey, 
+ Duck, Eagle, Elephant, Falcon, Ferret, Flamingo, Fox, Frog, Giraffe, Goat, Goose, 
+ Gorilla, Grasshopper, Hawk, Hedgehog, Hippopotamus, Hyena, Iguana, Jaguar, Kangaroo, 
+ Koala, Lemur, Leopard, Lizard, Lynx, Mole, Mongoose, Ostrich, Otter, Owl, Panda, 
+ Peacock, Penguin, Porcupine, Raccoon, Seal, Sheep, Snail, Snake, Spider, Squid, 
+ Walrus, Whale, Wolf
+
+Fruits & Vegetables: Apple, Banana, Beetroot, Bell Pepper, Cabbage, Capsicum, Carrot,
+ Cauliflower, Chilli Pepper, Corn, Cucumber, Eggplant, Garlic, Ginger, Grapes, Jalepeno, 
+ Kiwi, Lemon, Lettuce, Mango, Onion, Orange, Paprika, Pear, Peas, Pineapple, Pomegranate,
+  Potato, Raddish, Soy Beans, Spinach, Sweetcorn, Sweetpotato, Tomato, Turnip, Watermelon
+
+Monuments: Ajanta Caves, Charar-E-Sharif, Chhota Imambara, Ellora Caves, Fatehpur Sikri,
+ Gateway of India, Hawa Mahal, Humayun’s Tomb, India Gate Pics, India Gate, Khajuraho,
+Sun Temple Konark, Alai Darwaza, Alai Minar, Basilica of Bom Jesus, Burj Khalifa,
+Charminar, Chichen Itza, Christ the Redeemer, Eiffel Tower, Golden Temple,
+Great Wall of China, Hawa Mahal Pics, Iron Pillar, Jamali Kamali Tomb, Lotus Temple,
+Machu Picchu, Mysore Palace, Pyramids of Giza, Qutub Minar, Roman Colosseum, 
+Statue of Liberty, Stonehenge, Taj Mahal, Tanjavur Temple, Venezuela Angel Falls, 
+Victoria Memorial
+
+Sports Equipment: Badminton, Baseball, Basketball, Boxing, Chess, Cricket, Fencing,
+ Football, Formula 1, Gymnastics, Hockey, Ice Hockey, Kabaddi, MotoGP, Shooting,
+  Swimming, Table Tennis, Tennis, Volleyball, Weight Lifting, Wrestling, WWE
+
+Weather: Cloudy, Rain, Shine, Sunrise, Dew, Fog/Smog, Frost, Glaze, Hail, 
+Lightning, Rainbow, Rime, Sandstorm, Snow
